@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+.main-body{
+  width: 300px;
+  height: 400px;
+  display: flex;
+  border: 1px solid black;
+}
+
