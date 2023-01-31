@@ -1,7 +1,7 @@
 *{
   box-sizing: border-box;
   font-family: 'Outfit', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /* Main Body */
@@ -9,12 +9,13 @@ body{
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .main-body{
-  width: 275px;
-  height: 450px;
+  width: 240px;
+  height: 435px;
   display: flex;
   flex-direction: column;
   place-content: center;
@@ -24,28 +25,75 @@ body{
 
 /* Main Pic */
 .main-cube{
-  width: 100%;
-  height: 100%;
+  width: 210px;
+  height: 195px;
+  margin: 0 auto;
   border: 1px solid red;
 }
 img{
   width: 100%;
   height: 100%;
 }
- /*  */
+
+/* Text Boxes */
+.main-text, .creator-info{
+  width: 210px;
+}
 .nft-info{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
-
 .creator-info{
   display: flex;
   flex-direction: row;
+}
+.nft-eth>img{
+  width: 12px;
+  height: 16px;
+  position: relative;
+  top: 11.5px;
+}
+.nft-days>img{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 11px;
+}
+.nft-eth, .nft-days{
+  display: flex;
+}
+.creator-info>img{
+  width: 23px;
+  height: 23px;
+  position: relative;
+  top: 7px;
+}
+.creation-title{
+  margin-right: 3px;
+  margin-left: 6px;
+}
+.nft-eth p, .nft-days p{
+  margin-left: 2px;
+}
+
+/* Attribution */
+.attribution{
+  width: 240px;
 }
 
 /* Font Styles */
 .main-text>p{
   font-size: 0.825rem;
+}
+.nft-eth>p{
+  font-size: 0.73rem;
+}
+.nft-days>p, .creator-info>p{
+  font-size: 0.72rem;
+}
+.attribution>span, .attribution a{
+  font-size: 0.82rem;
 }
 
 /* Borders */
@@ -57,4 +105,7 @@ div{
 }
 .main-text>h1, .main-text>p{
   border: 1px solid gray;
+}
+img{
+  border: 1px solid brown;
 }
