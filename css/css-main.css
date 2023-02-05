@@ -12,15 +12,17 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: hsl(217, 54%, 11%);
 }
 .main-body{
-  width: 240px;
-  height: 435px;
+  width: 242px;
+  height: 400px;
   display: flex;
   flex-direction: column;
-  place-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 1%;
-  border: 1px solid black;
+  background-color: hsl(216, 50%, 16%);
 }
 
 /* Main Pic */
@@ -28,16 +30,19 @@ body{
   width: 210px;
   height: 195px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 img{
   width: 100%;
   height: 100%;
 }
+.main-body, .main-cube>img{
+  border-radius: 10px;
+}
 
 /* Text Boxes */
 .main-text, .creator-info{
   width: 210px;
+  margin-left: 5px;
 }
 .nft-info{
   display: flex;
@@ -47,18 +52,22 @@ img{
 .creator-info{
   display: flex;
   flex-direction: row;
+  padding-top: 5px;
+  border-top: 1px solid hsl(215, 32%, 27%);
 }
 .nft-eth>img{
-  width: 12px;
-  height: 16px;
+  width: 8px;
+  height: 14px;
   position: relative;
-  top: 11.5px;
+  top: 10px;
+  margin-right: 2px;
 }
 .nft-days>img{
   width: 15px;
   height: 15px;
   position: relative;
   top: 11px;
+  margin-right: 2px;
 }
 .nft-eth, .nft-days{
   display: flex;
@@ -68,6 +77,9 @@ img{
   height: 23px;
   position: relative;
   top: 7px;
+  margin-right: 5px;
+  border-radius: 100%;
+  border: 1px solid hsl(0, 0%, 100%);
 }
 .creation-title{
   margin-right: 3px;
@@ -83,29 +95,35 @@ img{
 }
 
 /* Font Styles */
+body{
+  color: hsl(215, 51%, 70%);
+}
+h1>a{
+  font-weight: 600;
+}
 .main-text>p{
   font-size: 0.825rem;
 }
 .nft-eth>p{
   font-size: 0.73rem;
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
 }
-.nft-days>p, .creator-info>p{
+.nft-days>p, .creator-info>p, .creator-info a{
   font-size: 0.72rem;
 }
 .attribution>span, .attribution a{
   font-size: 0.82rem;
 }
-
-/* Borders */
-.nft-eth>p, .nft-days>p, .creator-info>p{
-  border: 1px solid purple;
+h1>a, .creator-name>a, .attribution{
+  color: hsl(0, 0%, 100%);
 }
-div{
-  border: 1px solid orange;
+.attribution>span>a{
+  color: orange;
 }
-.main-text>h1, .main-text>p{
-  border: 1px solid gray;
+a{
+  text-decoration: none;
 }
-img{
-  border: 1px solid brown;
+.main-text a:hover, .creator-name a:hover{
+  color: hsl(178, 100%, 50%);
 }
