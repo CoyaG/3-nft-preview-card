@@ -13,11 +13,10 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
-
-This is a site with an NFT Preview Card. I was unable to change the picture when hovering over it, since the other picture was not provided.
 
 ### The challenge
 
@@ -47,7 +46,25 @@ Users should be able to:
 
 ### What I learned
 
-I was able to practice the skills I've already learned regarding HTML and CSS.
+How to do an overlay! The code:
+```css
+.overlay{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(178, 100%, 50%, 0.5);
+}
+.overlay>img{
+  width: 40px;
+  height: 40px;
+}
+.main-cube:hover .overlay{
+  visibility: visible;
+}
+```
 
 ### Continued development
 
@@ -58,3 +75,7 @@ I would like to continue building my web development skills.
 - Website - [GitHub](https://github.com/CoyaG)
 - Frontend Mentor - [@CoyaG](https://www.frontendmentor.io/profile/CoyaG)
 - Twitter - [@CoyaG1](https://twitter.com/CoyaG1)
+
+## Acknowledgments
+
+Shoutout to [Melvin Aguilar](https://www.frontendmentor.io/profile/MelvinAguilar) who helped me realize the other picture was an overlay.

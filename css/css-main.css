@@ -6,8 +6,7 @@
 
 /* Main Body */
 body{
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +15,7 @@ body{
 }
 .main-body{
   width: 242px;
-  height: 400px;
+  height: 390px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,13 +29,33 @@ body{
   width: 210px;
   height: 195px;
   margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/image-equilibrium.jpg);
+  border-radius: 10px;
 }
 img{
   width: 100%;
   height: 100%;
 }
-.main-body, .main-cube>img{
+.main-body, .overlay{
   border-radius: 10px;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(178, 100%, 50%, 0.5);
+}
+.overlay>img{
+  width: 40px;
+  height: 40px;
+}
+.main-cube:hover .overlay{
+  visibility: visible;
 }
 
 /* Text Boxes */
